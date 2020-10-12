@@ -1,0 +1,4 @@
+-- drop database if exists adventureworks;
+-- create database adventureworks;
+-- drop schema if exists public;
+-- create schema public;

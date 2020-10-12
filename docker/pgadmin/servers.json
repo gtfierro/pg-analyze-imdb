@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "AdventureWorks",
+            "Group": "AdventureWorks",
+            "Port": 5432,
+            "Username": "postgres",
+            "Password": "cs186",
+            "PassFile": "/opt/passfile",
+            "Host": "localhost"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  pg:
+    build: "./docker/pg"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./pg-data/:/data/"
+  pgadmin:
+    image: "dpage/pgadmin4"
+    depends_on:
+        - "pg"
+    environment:
+        - PGADMIN_DEFAULT_EMAIL=notreal@cs186berkeley.net
+        - PGADMIN_DEFAULT_PASSWORD=cs186
+        - PGADMIN_LISTEN_ADDRESS=0.0.0.0
+        - PGADMIN_SERVER_JSON_FILE=/pgadmin4/servers.json
+    ports:
+        - 8888:80
