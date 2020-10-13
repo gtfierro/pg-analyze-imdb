@@ -18,3 +18,7 @@ services:
         - PGADMIN_SERVER_JSON_FILE=/pgadmin4/servers.json
     ports:
         - 8888:80
+  # queries:
+  #   build: "./docker/queries"
+  #   stdin_open: true
+  #   tty: true  
