@@ -1,5 +1,3 @@
--- disable parallelism to simplify query plans
-SET max_parallel_workers_per_gather = 0;
 -- SELECT * result in a sequential scan
 SELECT * 
 FROM title_basics;
@@ -150,9 +148,5 @@ FROM title_principals p5 INNER JOIN (
 ) p4 ON p5.tconst = p4.tconst
 WHERE p5.nconst != 102;
 
--- do more selective genres?
--- do with fewer joins?
 
--- do some aggregations:
--- number of movies in a given year 
--- number of movies in a given year with a given genre
+-- that's the end!

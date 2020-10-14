@@ -29,4 +29,4 @@
     (venv) $ python run_query_sequence.py queries.sql
     ```
     
-    Make sure your terminal is full-screen! The script will iterate through each statement in `queries.sql` and print out the query plan (where appropriate). Hit `ENTER` to advance to the next query. If you are on Linux, the script will also copy the query into your clipboard so you can paste it into the pgAdmin interface. For help on how to do this, see the [video](https://youtu.be/zik6j42m3m8)
+    Make sure your terminal is full-screen! The script will iterate through each statement in `queries.sql` and print out the query plan (where appropriate). Hit `ENTER` to advance to the next query. If you are on Linux or Mac, the script will also copy the query into your clipboard so you can paste it into the pgAdmin interface. For help on how to do this, see the [video](https://youtu.be/zik6j42m3m8)
