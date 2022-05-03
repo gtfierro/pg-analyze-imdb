@@ -1,6 +1,6 @@
 # Inspecting Postgres Query Planning
 
-1. Download the IMDB dataset (packaged for postgres) from [here](https://people.eecs.berkeley.edu/~gtfierro/stuff/imdb) (WARNING: this is ~1GB!)
+1. Download the IMDB dataset (packaged for postgres) from [here](https://home.gtf.fyi/files/imdb) (WARNING: this is ~1GB!)
 2. Place this file (should be called `imdb`) into `docker/pg`
 3. Start the database + pgadmin with `docker-compose up --build` (run from the root of this repository). This may take a few minutes because the IMDB database is fairly large and has many indices. You can tell this is done when you see output like the following:
     ```
